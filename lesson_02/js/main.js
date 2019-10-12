@@ -19,7 +19,26 @@ console.log(`Цель заработать ${mission} рублей/доллар�
 
 console.log(addExpenses.toLowerCase().split(', '));
 
-console.log(budgetDay);
+console.log(`Результат ${budgetDay}, Остаток ${money%30}`);
+
+
+let num = '266219',
+  result;
+  num = num.split('');                  // Разбиваем на  массив
+for (let i = 0; i < num.length; i++) {  
+  if (i === 0) {
+    result = +num[0];    
+  } else {
+    result *= +num[i];  
+  }
+}
+
+console.log(result);
+
+result = result ** 3;
+
+console.log(result.toString().slice(0,2));
+
 
 
 
