@@ -1,11 +1,27 @@
 'use strict';
 
-let money,
-  income,
-  addExpenses,
-  deposit,
-  mission,
-  period;
+let money = 40000,                        // Доход за месяц
+  income = 'Фриланс',                     // Доп доход
+  addExpenses = 'Машина, Кофе, Одежда',   // Доп расходы
+  deposit = true,                         // Депозит
+  mission = 100000,                       // Цель
+  period = 7,                             // Период
+  budgetDay = money / 30;                 // Дневной бюджет
 
-alert('Привет');
-console.log('Это консоль');
+console.log(typeof(money));
+console.log(typeof(income));
+console.log(typeof(deposit));
+
+console.log(income.length);
+
+console.log(`Период ${period} месяцев`);
+console.log(`Цель заработать ${mission} рублей/долларов/гривен/юани`);
+
+console.log(addExpenses.toLowerCase().split(', '));
+
+console.log(budgetDay);
+
+
+
+
+
